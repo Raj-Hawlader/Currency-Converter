@@ -1,0 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.converter-form select, .converter-form input {
+    padding: 10px;
+    font-size: 1rem;
+}
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

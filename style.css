@@ -1,7 +1,7 @@
-/* Basic styles for body */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #5fbbce;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,9 +10,8 @@ body {
     height: 100vh;
 }
 
-/* Container */
 .container {
-    background-color: #fff;
+    background-color: #71f0dbc5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -20,14 +19,12 @@ body {
     width: 100%;
 }
 
-/* Title */
 h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Form styles */
 .converter-form div {
     margin-bottom: 15px;
 }
@@ -62,7 +59,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Result styles */
 #result {
     margin-top: 20px;
     font-size: 18px;

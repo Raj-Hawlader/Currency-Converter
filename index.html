@@ -16,7 +16,6 @@
                     <option value="USD">USD - US Dollar</option>
                     <option value="EUR">EUR - Euro</option>
                     <option value="GBP">GBP - British Pound</option>
-                    <!-- Add more currencies here -->
                 </select>
             </div>
             <div>
@@ -25,7 +24,7 @@
                     <option value="USD">USD - US Dollar</option>
                     <option value="EUR">EUR - Euro</option>
                     <option value="GBP">GBP - British Pound</option>
-                    <!-- Add more currencies here -->
+
                 </select>
             </div>
             <div>
@@ -50,8 +49,6 @@
                 return;
             }
 
-            // Fetch exchange rate from a free API (Open Exchange Rates, ExchangeRate-API, etc.)
-            // Example with ExchangeRate-API (you'd need to sign up and get an API key)
             fetch(`https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/${fromCurrency}`)
                 .then(response => response.json())
                 .then(data => {

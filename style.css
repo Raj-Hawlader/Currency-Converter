@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #5fbbce;
@@ -9,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .container {
     background-color: #71f0dbc5;
     padding: 15px;

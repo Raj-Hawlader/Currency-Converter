@@ -14,17 +14,18 @@
                 <label for="fromCurrency">From:</label>
                 <select id="fromCurrency">
                     <option value="USD">USD - US Dollar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - British Pound</option>
+                    <option value="BDT">BDT - Bangladeshi Taka</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
                 </select>
             </div>
             <div>
                 <label for="toCurrency">To:</label>
                 <select id="toCurrency">
                     <option value="USD">USD - US Dollar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - British Pound</option>
-
+                    <option value="BDT">BDT - Bangladeshi Taka</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
                 </select>
             </div>
             <div>
@@ -36,31 +37,6 @@
         <div class="result" id="result"></div>
     </div>
 
-    <script>
-        document.getElementById('converter-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const fromCurrency = document.getElementById('fromCurrency').value;
-            const toCurrency = document.getElementById('toCurrency').value;
-            const amount = document.getElementById('amount').value;
-
-            if (amount === '' || amount <= 0) {
-                alert('Please enter a valid amount.');
-                return;
-            }
-
-            fetch(`https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/${fromCurrency}`)
-                .then(response => response.json())
-                .then(data => {
-                    const exchangeRate = data.conversion_rates[toCurrency];
-                    const convertedAmount = (amount * exchangeRate).toFixed(2);
-                    document.getElementById('result').textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
-                })
-                .catch(error => {
-                    console.error('Error fetching exchange rates:', error);
-                    document.getElementById('result').textContent = 'Error fetching exchange rates. Please try again later.';
-                });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
